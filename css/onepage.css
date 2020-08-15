@@ -79,6 +79,38 @@ br {
     line-height: 30px;
 }
 
+.line-left, 
+.line-right,
+.line-top, 
+.line-bottom {
+    background-color: #193F56;
+    position: absolute;
+    z-index: 100;
+}
+
+.line-left {
+    width: 1px;
+    left: 3%;
+    height: 60%;
+}
+
+.line-right {
+    width: 1px;
+    left: 97%;
+    height: 100%;
+}
+
+.line-top {
+    height: 1px;
+    top: 5%;
+    width: 100%;
+}
+
+.line-bottom {
+    height: 1px;
+    bottom: 5%;
+    width: 80%;
+}
 
 /*section cover*/
 .cover-bgr {
@@ -175,8 +207,8 @@ img.coverbgr {
 
 img#skyteam {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5%;
+    right: 3%;
     width: 70px;
     margin: 20px;
 }
@@ -567,6 +599,7 @@ img.eventprebgr {
         min-width: 320px;
     }
     section.eventpre, 
+    .lines,
     img#skyteam,
     .small-slide-wrap a {
         display: none;
