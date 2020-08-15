@@ -545,28 +545,16 @@ img.eventprebgr {
 
 
 /* media query */
-@media (min-height: 1000px) {
-    img.coverbgr, 
-    img.eventprebgr,
-    .event-img .event-imgbox img {
-        height: 100%;
-        width: auto;
-        min-width: 100%;
-    }
-}
-
-@media (min-width: 561px) and (max-width: 800px) {
+@media (min-width: 561px) {
     html {
         font-size: 7px;
     }
     img.coverbgr, 
-    img.eventprebgr {
-        width: auto;
-        min-width: 1200px;
-        height: 100%;
-    }
+    img.eventprebgr,
     .event-imgbox img {
         height: 100%;
+        width: auto;
+        min-width: 100%;
     }
 }
 
@@ -649,8 +637,6 @@ img.eventprebgr {
         top: 0;
         transform: none;
         margin-left: 10%;
-        margin-bottom: 10%;
-        margin-top: 20px;
         right: 0;
     }
     .small-slide-img img {
@@ -673,9 +659,10 @@ img.eventprebgr {
     .restaurant .small-slide-img {
         width: 80%;
         margin: 0 auto;
+        overflow: hidden;
     }
     .restaurant .small-slide-img img{
-        min-width: 300px;
+        min-width: 400px;
     }
     .leisure .small-slide-img img {
         width: auto;
